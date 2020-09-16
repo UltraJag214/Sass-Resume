@@ -6,4 +6,31 @@ body {
   margin: 0;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 200px;
+  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header .profile-picture img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=styles.css.map */
