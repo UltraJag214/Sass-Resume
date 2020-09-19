@@ -1,5 +1,5 @@
-@import "mixins";
 @import "variables";
+@import "colors";
 
 @mixin reset {
     margin: 0;
@@ -58,3 +58,47 @@ body{
     }
 }
 
+.content {
+    height: 100%;
+    @include reset;
+
+    .column-left {
+        padding: 30px;
+        width: 25%;
+
+        .section-header {
+            color: $header-color;
+            @include reset;
+            margin-bottom: $heading-margin;
+            letter-spacing: $h-letter-spacing;
+            line-height: $line-spacing;
+            font-family: $h-font-family;
+        }
+    
+        .divider {
+            border: solid $header-color $divider-size;
+            width: $divider-width;
+            margin: $divider-margin;
+        }
+
+        .section-paragraph {
+            @include reset;
+            margin-top: $heading-margin;
+            color: $paragraph-color;
+            font-family: $font-family;
+        }
+
+        .spacer {
+            margin: $spacer;
+        }
+
+        .paragraph {
+            display: flex;
+            margin: $icon-margin;
+            p {
+                @include reset;
+                padding-left: $p-padding;
+            }
+        }
+    }
+}
