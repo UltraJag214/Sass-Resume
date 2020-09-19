@@ -1,55 +1,17 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "mixins";
+ *   |         ^^^^^^^^
+ *   '
+ *   src/styles/styles.scss 1:9  root stylesheet */
 
-body {
-  margin: 0;
-  padding: 0;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   src/styles/styles.scss 1:9  root stylesheet";
 }
-
-body {
-  font-family: Helvetica Arial;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.row.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  font-size: 2em;
-  height: 200px;
-  background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=2000&fit=max&ixid=eyJhcHBfaWQiOjExNzczfQ");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.header .avatar {
-  width: 31.25%;
-}
-.header .avatar img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-.header-title {
-  width: 62.5%;
-}
-.header-subtitle {
-  font-size: initial;
-}
-
-.text--white {
-  color: #fff;
-}
-
-/*# sourceMappingURL=styles.css.map */
